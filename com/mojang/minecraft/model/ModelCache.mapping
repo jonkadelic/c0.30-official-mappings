@@ -1,0 +1,11 @@
+CLASS com/mojang/minecraft/a/g com/mojang/minecraft/model/ModelCache
+	FIELD a humanoid Lcom/mojang/minecraft/a/k;
+	FIELD b humanoidArmor Lcom/mojang/minecraft/a/k;
+	FIELD c creeper Lcom/mojang/minecraft/a/e;
+	FIELD d skeleton Lcom/mojang/minecraft/a/h;
+	FIELD e zombie Lcom/mojang/minecraft/a/f;
+	FIELD f pig Lcom/mojang/minecraft/a/o;
+	FIELD g sheep Lcom/mojang/minecraft/a/o;
+	FIELD h spider Lcom/mojang/minecraft/a/m;
+	FIELD i sheepFur Lcom/mojang/minecraft/a/d;
+	METHOD a getModel (Ljava/lang/String;)Lcom/mojang/minecraft/a/b;

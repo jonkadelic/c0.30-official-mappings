@@ -1,0 +1,26 @@
+CLASS com/mojang/minecraft/l com/mojang/minecraft/Minecraft
+	FIELD I fullscreen Z
+	FIELD J timer Lcom/mojang/minecraft/d;
+	FIELD K cursor Lorg/lwjgl/input/Cursor;
+	FIELD L resourceThread Lcom/mojang/minecraft/c;
+	FIELD a gameMode Lcom/mojang/minecraft/d/b;
+	FIELD b width I
+	FIELD c height I
+	FIELD d level Lcom/mojang/minecraft/level/Level;
+	FIELD e levelRenderer Lcom/mojang/minecraft/b/g;
+	FIELD f player Lcom/mojang/minecraft/player/Player;
+	FIELD g particleEngine Lcom/mojang/minecraft/particle/a;
+	FIELD h user Lcom/mojang/minecraft/a;
+	FIELD i host Ljava/lang/String;
+	FIELD j parent Ljava/awt/Canvas;
+	FIELD k appletMode Z
+	FIELD l pause Z
+	FIELD m textures Lcom/mojang/minecraft/b/a;
+	FIELD n font Lcom/mojang/minecraft/e/l;
+	FIELD o screen Lcom/mojang/minecraft/e/o;
+	FIELD p progressScreen Lcom/mojang/minecraft/i;
+	FIELD q gameRenderer Lcom/mojang/minecraft/b/d;
+	FIELD w gui Lcom/mojang/minecraft/e/m;
+	FIELD x noRender Z
+	METHOD a setScreen (Lcom/mojang/minecraft/e/o;)V
+	METHOD b grabMouse ()V

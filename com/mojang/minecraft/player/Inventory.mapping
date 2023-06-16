@@ -1,0 +1,3 @@
+CLASS com/mojang/minecraft/player/Inventory com/mojang/minecraft/player/Inventory
+	FIELD selected selected I
+	METHOD removeResource removeResource (I)Z

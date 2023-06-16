@@ -1,0 +1,5 @@
+CLASS com/mojang/minecraft/level/b com/mojang/minecraft/level/MobSpawner
+	FIELD a level Lcom/mojang/minecraft/level/Level;
+	METHOD <init> (Lcom/mojang/minecraft/level/Level;)V
+		ARG 1 level
+	METHOD a tick (ILcom/mojang/minecraft/Entity;Lcom/mojang/minecraft/i;)I

@@ -1,0 +1,6 @@
+CLASS com/mojang/minecraft/level/a/a/c com/mojang/minecraft/level/levelgen/synth/CompositeNoise
+	FIELD a a Lcom/mojang/minecraft/level/a/a/a;
+	FIELD b b Lcom/mojang/minecraft/level/a/a/a;
+	METHOD <init> (Lcom/mojang/minecraft/level/a/a/a;Lcom/mojang/minecraft/level/a/a/a;)V
+		ARG 1 a
+		ARG 2 b

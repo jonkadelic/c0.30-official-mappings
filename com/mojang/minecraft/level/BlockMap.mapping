@@ -1,0 +1,39 @@
+CLASS com/mojang/minecraft/level/BlockMap com/mojang/minecraft/level/BlockMap
+	FIELD all all Ljava/util/List;
+	FIELD depth depth I
+	FIELD entityGrid entityGrid [Ljava/util/List;
+	FIELD height height I
+	FIELD serialVersionUID serialVersionUID J
+	FIELD slot2 slot2 Lcom/mojang/minecraft/level/BlockMap$Slot;
+	FIELD slot slot Lcom/mojang/minecraft/level/BlockMap$Slot;
+	FIELD tmp tmp Ljava/util/List;
+	FIELD width width I
+	METHOD <init> (III)V
+		ARG 1 width
+		ARG 2 depth
+		ARG 3 height
+	METHOD access$000 access$000 (Lcom/mojang/minecraft/level/BlockMap;)I
+	METHOD access$100 access$100 (Lcom/mojang/minecraft/level/BlockMap;)I
+	METHOD access$200 access$200 (Lcom/mojang/minecraft/level/BlockMap;)I
+	METHOD clear clear ()V
+	METHOD getEntities getEntities (Lcom/mojang/minecraft/Entity;FFFFFF)Ljava/util/List;
+		ARG 1 entity
+	METHOD getEntities getEntities (Lcom/mojang/minecraft/Entity;FFFFFFLjava/util/List;)Ljava/util/List;
+		ARG 1 entity
+	METHOD getEntities getEntities (Lcom/mojang/minecraft/Entity;Lcom/mojang/minecraft/phys/AABB;)Ljava/util/List;
+		ARG 1 entity
+	METHOD getEntities getEntities (Lcom/mojang/minecraft/Entity;Lcom/mojang/minecraft/phys/AABB;Ljava/util/List;)Ljava/util/List;
+		ARG 1 entity
+	METHOD insert insert (Lcom/mojang/minecraft/Entity;)V
+		ARG 1 entity
+	METHOD moved moved (Lcom/mojang/minecraft/Entity;)V
+		ARG 1 entity
+	METHOD remove remove (Lcom/mojang/minecraft/Entity;)V
+		ARG 1 entity
+	METHOD removeAllNonCreativeModeEntities removeAllNonCreativeModeEntities ()V
+	METHOD render$7127a881 render (Lcom/mojang/minecraft/a/c;Lcom/mojang/minecraft/b/i;Lcom/mojang/minecraft/b/a;F)V
+	METHOD tickAll tickAll ()V
+	CLASS Slot Slot
+		METHOD add add (Lcom/mojang/minecraft/Entity;)V
+		METHOD init init (FFF)Lcom/mojang/minecraft/level/BlockMap$Slot;
+		METHOD remove remove (Lcom/mojang/minecraft/Entity;)V

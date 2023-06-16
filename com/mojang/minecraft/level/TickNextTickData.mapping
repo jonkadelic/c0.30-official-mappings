@@ -1,0 +1,11 @@
+CLASS com/mojang/minecraft/level/d com/mojang/minecraft/level/TickNextTickData
+	FIELD a type I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e delay I
+	METHOD <init> (IIII)V
+		ARG 1 type
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

@@ -1,0 +1,16 @@
+CLASS com/mojang/minecraft/g com/mojang/minecraft/HitResult
+	FIELD a hitType I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e face I
+	FIELD f location Lcom/mojang/minecraft/a/c;
+	FIELD g entity Lcom/mojang/minecraft/Entity;
+	METHOD <init> (IIIILcom/mojang/minecraft/a/c;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 face
+		ARG 5 location
+	METHOD <init> (Lcom/mojang/minecraft/Entity;)V
+		ARG 1 entity

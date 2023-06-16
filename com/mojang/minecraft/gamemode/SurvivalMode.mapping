@@ -1,0 +1,6 @@
+CLASS com/mojang/minecraft/d/c com/mojang/minecraft/gamemode/SurvivalMode
+	FIELD c destroyBlockX I
+	FIELD d destroyBlockY I
+	FIELD e destroyBlockZ I
+	FIELD f destroyProgress I
+	FIELD g destroyTicks I

@@ -1,0 +1,4 @@
+CLASS com/mojang/minecraft/b/h com/mojang/minecraft/renderer/ItemInHandRenderer
+	FIELD a mc Lcom/mojang/minecraft/l;
+	FIELD c handHeight F
+	FIELD d oHandHeight F

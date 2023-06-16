@@ -1,0 +1,14 @@
+CLASS com/mojang/minecraft/net/NetworkPlayer com/mojang/minecraft/net/NetworkPlayer
+	FIELD displayName displayName Ljava/lang/String;
+	FIELD minecraft minecraft Lcom/mojang/minecraft/l;
+	FIELD moveQueue moveQueue Ljava/util/List;
+	FIELD name name Ljava/lang/String;
+	FIELD newTexture newTexture Ljava/awt/image/BufferedImage;
+	FIELD textures$7a7c7041 textures Lcom/mojang/minecraft/b/a;
+	FIELD xp xp I
+	FIELD yp yp I
+	FIELD zp zp I
+	METHOD queue queue (BBB)V
+	METHOD queue queue (BBBFF)V
+	METHOD queue queue (FF)V
+	METHOD teleport teleport (SSSFF)V

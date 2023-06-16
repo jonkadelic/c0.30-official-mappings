@@ -1,0 +1,7 @@
+CLASS com/mojang/minecraft/player/Player com/mojang/minecraft/player/Player
+	FIELD MAX_ARROWS MAX_ARROWS I
+	FIELD MAX_HEALTH MAX_HEALTH I
+	FIELD inventory inventory Lcom/mojang/minecraft/player/Inventory;
+	FIELD newTexture newTexture Ljava/awt/image/BufferedImage;
+	METHOD getModel getModel ()Lcom/mojang/minecraft/a/k;
+	METHOD getScore getScore ()I

@@ -1,0 +1,7 @@
+CLASS com/mojang/minecraft/mob/Mob com/mojang/minecraft/mob/Mob
+	FIELD ATTACK_DURATION ATTACK_DURATION I
+	FIELD TOTAL_AIR_SUPPLY TOTAL_AIR_SUPPLY I
+	FIELD invulnerableTime invulnerableTime I
+	FIELD modelCache modelCache Lcom/mojang/minecraft/a/g;
+	FIELD tickCount tickCount I
+	METHOD heal heal (I)V

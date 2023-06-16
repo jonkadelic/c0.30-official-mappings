@@ -1,0 +1,28 @@
+CLASS com/mojang/minecraft/Entity com/mojang/minecraft/Entity
+	FIELD bbHeight bbHeight F
+	FIELD blockMap blockMap Lcom/mojang/minecraft/level/BlockMap;
+	FIELD heightOffset heightOffset F
+	FIELD makeStepSound makeStepSound Z
+	FIELD removed removed Z
+	FIELD serialVersionUID serialVersionUID J
+	FIELD x x F
+	FIELD xOld xOld F
+	FIELD xRot xRot F
+	FIELD y y F
+	FIELD yOld yOld F
+	FIELD yRot yRot F
+	FIELD z z F
+	FIELD zOld zOld F
+	METHOD distanceTo distanceTo (FFF)F
+	METHOD distanceToSqr distanceToSqr (Lcom/mojang/minecraft/Entity;)F
+	METHOD hurt hurt (Lcom/mojang/minecraft/Entity;I)V
+	METHOD playerTouch playerTouch (Lcom/mojang/minecraft/Entity;)V
+		ARG 1 entity
+	METHOD remove remove ()V
+	METHOD render$2a8c5a render (Lcom/mojang/minecraft/b/a;F)V
+		ARG 1 textures
+		ARG 2 partialTick
+	METHOD setLevel setLevel (Lcom/mojang/minecraft/level/Level;)V
+	METHOD setPos setPos (FFF)V
+	METHOD setSize setSize (FF)V
+	METHOD tick tick ()V

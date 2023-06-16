@@ -1,0 +1,3 @@
+CLASS com/mojang/minecraft/b/g com/mojang/minecraft/renderer/LevelRenderer
+	FIELD a level Lcom/mojang/minecraft/level/Level;
+	FIELD b textures Lcom/mojang/minecraft/b/a;

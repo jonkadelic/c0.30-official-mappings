@@ -1,0 +1,17 @@
+CLASS com/mojang/minecraft/level/a/a com/mojang/minecraft/level/levelgen/LevelGen
+	FIELD a progressScreen Lcom/mojang/minecraft/i;
+	FIELD b width I
+	FIELD c depth I
+	FIELD d height I
+	FIELD e random Ljava/util/Random;
+	FIELD f blocks [B
+	FIELD g waterLevel I
+	METHOD <init> (Lcom/mojang/minecraft/i;)V
+		ARG 1 progressScreen
+	METHOD a updateProgress (I)V
+		ARG 1 amount
+	METHOD a create (Ljava/lang/String;III)Lcom/mojang/minecraft/level/Level;
+		ARG 1 creator
+		ARG 2 width
+		ARG 3 depth
+		ARG 4 height

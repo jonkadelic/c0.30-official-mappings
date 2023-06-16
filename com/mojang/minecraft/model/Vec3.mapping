@@ -1,0 +1,28 @@
+CLASS com/mojang/minecraft/a/c com/mojang/minecraft/model/Vec3
+	FIELD a x F
+	FIELD b y F
+	FIELD c z F
+	METHOD <init> (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a normalize ()Lcom/mojang/minecraft/a/c;
+	METHOD a add (FFF)Lcom/mojang/minecraft/a/c;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a vectorTo (Lcom/mojang/minecraft/a/c;)Lcom/mojang/minecraft/a/c;
+		ARG 1 other
+	METHOD a clipX (Lcom/mojang/minecraft/a/c;F)Lcom/mojang/minecraft/a/c;
+		ARG 1 other
+		ARG 2 lerp
+	METHOD b distanceTo (Lcom/mojang/minecraft/a/c;)F
+		ARG 1 other
+	METHOD b clipY (Lcom/mojang/minecraft/a/c;F)Lcom/mojang/minecraft/a/c;
+		ARG 1 other
+		ARG 2 lerp
+	METHOD c distanceToSqr (Lcom/mojang/minecraft/a/c;)F
+		ARG 1 other
+	METHOD c clipZ (Lcom/mojang/minecraft/a/c;F)Lcom/mojang/minecraft/a/c;
+		ARG 1 other
+		ARG 2 lerp

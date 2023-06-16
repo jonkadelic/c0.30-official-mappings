@@ -1,0 +1,4 @@
+CLASS com/mojang/minecraft/level/a/a/a com/mojang/minecraft/level/levelgen/synth/SurfaceNoise
+	METHOD a getValue (DD)D
+		ARG 1 x
+		ARG 3 y

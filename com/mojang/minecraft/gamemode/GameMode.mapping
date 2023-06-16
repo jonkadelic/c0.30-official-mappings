@@ -1,0 +1,34 @@
+CLASS com/mojang/minecraft/d/b com/mojang/minecraft/gamemode/GameMode
+	FIELD a minecraft Lcom/mojang/minecraft/l;
+	FIELD b instantBreakBlocks Z
+	METHOD <init> (Lcom/mojang/minecraft/l;)V
+		ARG 1 minecraft
+	METHOD a render (F)V
+		ARG 1 partialTick
+	METHOD a removeResource (I)Z
+	METHOD a startDestroyBlock (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a continueDestroyBlock (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 face
+	METHOD a initLevel (Lcom/mojang/minecraft/level/Level;)V
+		ARG 1 level
+	METHOD a adjustPlayer (Lcom/mojang/minecraft/player/Player;)V
+		ARG 1 player
+	METHOD a useItem (Lcom/mojang/minecraft/player/Player;I)Z
+		ARG 1 player
+	METHOD b isSurvivalType ()Z
+	METHOD b destroyBlock (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b (Lcom/mojang/minecraft/level/Level;)V
+		ARG 1 level
+	METHOD b initPlayer (Lcom/mojang/minecraft/player/Player;)V
+	METHOD c stopDestroyBlock ()V
+	METHOD d getPickRange ()F
+	METHOD e tick ()V

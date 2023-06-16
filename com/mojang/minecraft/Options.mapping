@@ -1,0 +1,31 @@
+CLASS com/mojang/minecraft/k com/mojang/minecraft/Options
+	FIELD a music Z
+	FIELD b sound Z
+	FIELD c invertYMouse Z
+	FIELD d showFrameRate Z
+	FIELD e viewDistance I
+	FIELD f bobView Z
+	FIELD g anaglyph3d Z
+	FIELD h limitFramerate Z
+	FIELD i keyUp Lcom/mojang/minecraft/j;
+	FIELD j keyLeft Lcom/mojang/minecraft/j;
+	FIELD k keyDown Lcom/mojang/minecraft/j;
+	FIELD l keyRight Lcom/mojang/minecraft/j;
+	FIELD m keyJump Lcom/mojang/minecraft/j;
+	FIELD n keyBuild Lcom/mojang/minecraft/j;
+	FIELD o keyChat Lcom/mojang/minecraft/j;
+	FIELD p keyToggleFog Lcom/mojang/minecraft/j;
+	FIELD q keySaveLocation Lcom/mojang/minecraft/j;
+	FIELD r keyLoadLocation Lcom/mojang/minecraft/j;
+	FIELD s keyMappings [Lcom/mojang/minecraft/j;
+	FIELD t numOptions I
+	FIELD u renderDistanceNames [Ljava/lang/String;
+	FIELD v minecraft Lcom/mojang/minecraft/l;
+	FIELD w optionsFile Ljava/io/File;
+	METHOD <init> (Lcom/mojang/minecraft/l;Ljava/io/File;)V
+		ARG 1 minecraft
+		ARG 2 baseDir
+	METHOD a load ()V
+	METHOD b save ()V
+	METHOD b getMessage (I)Ljava/lang/String;
+		ARG 1 i

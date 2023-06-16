@@ -1,0 +1,2 @@
+CLASS com/mojang/minecraft/a/k com/mojang/minecraft/model/HumanoidModel
+	METHOD b setupAnim (FFFFFF)V

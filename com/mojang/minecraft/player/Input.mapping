@@ -1,0 +1,9 @@
+CLASS com/mojang/minecraft/player/a com/mojang/minecraft/player/Input
+	FIELD a leftImpulse F
+	FIELD b forwardImpulse F
+	FIELD c jumping Z
+	METHOD a tick ()V
+	METHOD a setKey (IZ)V
+		ARG 1 keyCode
+		ARG 2 isPressed
+	METHOD b releaseAllKeys ()V

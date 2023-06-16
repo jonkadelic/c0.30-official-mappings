@@ -1,0 +1,8 @@
+CLASS a/a util/Mth
+	FIELD a sinTable [F
+	METHOD a sin (F)F
+		ARG 0 value
+	METHOD b cos (F)F
+		ARG 0 value
+	METHOD c sqrt (F)F
+		ARG 0 value

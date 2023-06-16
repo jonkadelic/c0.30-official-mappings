@@ -1,0 +1,7 @@
+CLASS com/mojang/minecraft/phys/AABB com/mojang/minecraft/phys/AABB
+	FIELD x0 x0 F
+	FIELD x1 x1 F
+	FIELD y0 y0 F
+	FIELD y1 y1 F
+	FIELD z0 z0 F
+	FIELD z1 z1 F

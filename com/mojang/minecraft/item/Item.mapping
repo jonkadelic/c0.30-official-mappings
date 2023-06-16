@@ -1,0 +1,16 @@
+CLASS com/mojang/minecraft/item/Item com/mojang/minecraft/item/Item
+	FIELD a models [Lcom/mojang/minecraft/item/a;
+	FIELD age age I
+	FIELD resource resource I
+	FIELD rot rot F
+	FIELD tickCount tickCount I
+	FIELD xd xd F
+	FIELD yd yd F
+	FIELD zd zd F
+	METHOD <init> (Lcom/mojang/minecraft/level/Level;FFFI)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 resource
+	METHOD initModels initModels ()V

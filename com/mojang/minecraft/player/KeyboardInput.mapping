@@ -1,0 +1,5 @@
+CLASS com/mojang/minecraft/player/b com/mojang/minecraft/player/KeyboardInput
+	FIELD d keys [Z
+	FIELD e options Lcom/mojang/minecraft/k;
+	METHOD <init> (Lcom/mojang/minecraft/k;)V
+		ARG 1 options

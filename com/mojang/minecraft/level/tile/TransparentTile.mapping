@@ -1,0 +1,6 @@
+CLASS com/mojang/minecraft/level/tile/b com/mojang/minecraft/level/tile/TransparentTile
+	FIELD al renderInside Z
+	METHOD <init> (IIZ)V
+		ARG 1 id
+		ARG 2 tex
+		ARG 3 renderInside

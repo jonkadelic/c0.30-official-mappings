@@ -1,0 +1,34 @@
+CLASS com/mojang/minecraft/e/h com/mojang/minecraft/gui/GuiComponent
+	FIELD i blitOffset F
+	METHOD a fill (IIIII)V
+		ARG 0 x0
+		ARG 1 y0
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 color
+	METHOD a fillGradient (IIIIII)V
+		ARG 0 x0
+		ARG 1 y0
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 color0
+		ARG 5 color1
+	METHOD a drawCenteredString (Lcom/mojang/minecraft/e/l;Ljava/lang/String;III)V
+		ARG 0 font
+		ARG 1 string
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color
+	METHOD b blit (IIIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 u
+		ARG 4 v
+		ARG 5 width
+		ARG 6 height
+	METHOD b drawString (Lcom/mojang/minecraft/e/l;Ljava/lang/String;III)V
+		ARG 0 font
+		ARG 1 string
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color

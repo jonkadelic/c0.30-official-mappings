@@ -1,0 +1,2 @@
+CLASS com/mojang/minecraft/StopGameException com/mojang/minecraft/StopGameException
+	FIELD serialVersionUID serialVersionUID J

@@ -1,0 +1,139 @@
+CLASS com/mojang/minecraft/level/tile/a com/mojang/minecraft/level/tile/Tile
+	FIELD A cloth_02 Lcom/mojang/minecraft/level/tile/a;
+	FIELD B cloth_03 Lcom/mojang/minecraft/level/tile/a;
+	FIELD C cloth_04 Lcom/mojang/minecraft/level/tile/a;
+	FIELD D cloth_05 Lcom/mojang/minecraft/level/tile/a;
+	FIELD E cloth_06 Lcom/mojang/minecraft/level/tile/a;
+	FIELD F cloth_07 Lcom/mojang/minecraft/level/tile/a;
+	FIELD G cloth_08 Lcom/mojang/minecraft/level/tile/a;
+	FIELD H cloth_09 Lcom/mojang/minecraft/level/tile/a;
+	FIELD I cloth_10 Lcom/mojang/minecraft/level/tile/a;
+	FIELD J cloth_11 Lcom/mojang/minecraft/level/tile/a;
+	FIELD K cloth_12 Lcom/mojang/minecraft/level/tile/a;
+	FIELD L cloth_13 Lcom/mojang/minecraft/level/tile/a;
+	FIELD M cloth_14 Lcom/mojang/minecraft/level/tile/a;
+	FIELD N cloth_15 Lcom/mojang/minecraft/level/tile/a;
+	FIELD O flower Lcom/mojang/minecraft/level/tile/a;
+	FIELD P rose Lcom/mojang/minecraft/level/tile/a;
+	FIELD Q mushroom1 Lcom/mojang/minecraft/level/tile/a;
+	FIELD R mushroom2 Lcom/mojang/minecraft/level/tile/a;
+	FIELD S goldBlock Lcom/mojang/minecraft/level/tile/a;
+	FIELD T ironBlock Lcom/mojang/minecraft/level/tile/a;
+	FIELD U stoneSlab Lcom/mojang/minecraft/level/tile/a;
+	FIELD V stoneSlabHalf Lcom/mojang/minecraft/level/tile/a;
+	FIELD W redBrick Lcom/mojang/minecraft/level/tile/a;
+	FIELD X tnt Lcom/mojang/minecraft/level/tile/a;
+	FIELD Y bookshelf Lcom/mojang/minecraft/level/tile/a;
+	FIELD Z mossStone Lcom/mojang/minecraft/level/tile/a;
+	FIELD a random Ljava/util/Random;
+	FIELD aa obsidian Lcom/mojang/minecraft/level/tile/a;
+	FIELD ab tex I
+	FIELD ac id I
+	FIELD ad soundType Lcom/mojang/minecraft/level/tile/Tile$SoundType;
+	FIELD ae x0 F
+	FIELD af y0 F
+	FIELD ag z0 F
+	FIELD ah x1 F
+	FIELD ai y1 F
+	FIELD aj z1 F
+	FIELD ak particleGravity F
+	FIELD al solid [Z
+	FIELD b tiles [Lcom/mojang/minecraft/level/tile/a;
+	FIELD c shouldTick [Z
+	FIELD e rock Lcom/mojang/minecraft/level/tile/a;
+	FIELD f grass Lcom/mojang/minecraft/level/tile/a;
+	FIELD g dirt Lcom/mojang/minecraft/level/tile/a;
+	FIELD h stoneBrick Lcom/mojang/minecraft/level/tile/a;
+	FIELD i wood Lcom/mojang/minecraft/level/tile/a;
+	FIELD j sapling Lcom/mojang/minecraft/level/tile/a;
+	FIELD k unbreakable Lcom/mojang/minecraft/level/tile/a;
+	FIELD l water Lcom/mojang/minecraft/level/tile/a;
+	FIELD m calmWater Lcom/mojang/minecraft/level/tile/a;
+	FIELD n lava Lcom/mojang/minecraft/level/tile/a;
+	FIELD o calmLava Lcom/mojang/minecraft/level/tile/a;
+	FIELD p sand Lcom/mojang/minecraft/level/tile/a;
+	FIELD q gravel Lcom/mojang/minecraft/level/tile/a;
+	FIELD r goldOre Lcom/mojang/minecraft/level/tile/a;
+	FIELD s ironOre Lcom/mojang/minecraft/level/tile/a;
+	FIELD t coalOre Lcom/mojang/minecraft/level/tile/a;
+	FIELD u treeTrunk Lcom/mojang/minecraft/level/tile/a;
+	FIELD v leaves Lcom/mojang/minecraft/level/tile/a;
+	FIELD w sponge Lcom/mojang/minecraft/level/tile/a;
+	FIELD x glass Lcom/mojang/minecraft/level/tile/a;
+	FIELD y cloth_00 Lcom/mojang/minecraft/level/tile/a;
+	FIELD z cloth_01 Lcom/mojang/minecraft/level/tile/a;
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD a setShape (FFFFFF)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD a getTileAABB (III)Lcom/mojang/minecraft/phys/AABB;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a clip (IIILcom/mojang/minecraft/a/c;Lcom/mojang/minecraft/a/c;)Lcom/mojang/minecraft/g;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 a
+		ARG 5 b
+	METHOD a inYZ (Lcom/mojang/minecraft/a/c;)Z
+	METHOD a render (Lcom/mojang/minecraft/b/c;)V
+		ARG 1 t
+	METHOD a renderFace (Lcom/mojang/minecraft/b/c;IIII)V
+		ARG 1 t
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+	METHOD a renderFace (Lcom/mojang/minecraft/b/c;IIIII)V
+		ARG 1 t
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+		ARG 6 tex
+	METHOD a shouldRenderFace (Lcom/mojang/minecraft/level/Level;IIII)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 layer
+	METHOD a destroy (Lcom/mojang/minecraft/level/Level;IIILcom/mojang/minecraft/particle/a;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 particleEngine
+	METHOD a tick (Lcom/mojang/minecraft/level/Level;IIILjava/util/Random;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
+	METHOD a setSoundType (Lcom/mojang/minecraft/level/tile/Tile$SoundType;FFF)Lcom/mojang/minecraft/level/tile/a;
+		ARG 1 soundType
+	METHOD a setTicking (Z)V
+		ARG 1 ticking
+	METHOD b blocksLight ()Z
+	METHOD b getTexture (I)I
+		ARG 1 face
+	METHOD b getAABB (III)Lcom/mojang/minecraft/phys/AABB;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b inXZ (Lcom/mojang/minecraft/a/c;)Z
+	METHOD b renderFace2 (Lcom/mojang/minecraft/b/c;IIII)V
+		ARG 1 t
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+	METHOD c isSolid ()Z
+	METHOD c inXY (Lcom/mojang/minecraft/a/c;)Z
+	METHOD f getResourceCount ()I
+	METHOD g getResource ()I

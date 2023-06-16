@@ -1,0 +1,29 @@
+CLASS com/mojang/minecraft/e/o com/mojang/minecraft/gui/Screen
+	FIELD a minecraft Lcom/mojang/minecraft/l;
+	FIELD b width I
+	FIELD c height I
+	FIELD d buttons Ljava/util/List;
+	FIELD e passEvents Z
+	FIELD f font Lcom/mojang/minecraft/e/l;
+	METHOD a init ()V
+	METHOD a keyPressed (CI)V
+		ARG 1 character
+		ARG 2 keyCode
+	METHOD a render (II)V
+		ARG 1 x
+		ARG 2 y
+	METHOD a mouseClicked (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 eventButton
+	METHOD a buttonClicked (Lcom/mojang/minecraft/e/e;)V
+		ARG 1 button
+	METHOD a init (Lcom/mojang/minecraft/l;II)V
+		ARG 1 minecraft
+		ARG 2 width
+		ARG 3 height
+	METHOD b removed ()V
+	METHOD c tick ()V
+	METHOD d updateEvents ()V
+	METHOD e mouseEvent ()V
+	METHOD f keyboardEvent ()V

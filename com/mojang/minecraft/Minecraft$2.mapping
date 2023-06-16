@@ -1,0 +1,3 @@
+CLASS com/mojang/minecraft/e com/mojang/minecraft/Minecraft$2
+	METHOD <init> (Lcom/mojang/minecraft/l;)V
+		ARG 1 minecraft
