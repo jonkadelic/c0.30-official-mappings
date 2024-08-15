@@ -1,0 +1,1367 @@
+tiny	2	0	intermediary	named
+c	a/a	util/Mth
+	f	[F	a	sin
+	m	(F)F	a	sin
+		p	0		value
+	m	(F)F	b	cos
+		p	0		value
+	m	(F)F	c	sqrt
+		p	0		value
+c	com/mojang/a/a	com/mojang/comm/SocketConnection
+	f	Z	a	connected
+	f	Ljava/nio/channels/SocketChannel;	b	socketChannel
+	f	Ljava/nio/ByteBuffer;	c	readBuffer
+	f	Ljava/nio/ByteBuffer;	d	writeBuffer
+	f	Lcom/mojang/minecraft/net/c;	e	connectionListener
+	f	Ljava/net/Socket;	f	socket
+	m	(Ljava/lang/String;I)V	<init>	
+		p	1		ip
+		p	2		port
+	m	()V	a	disconnect
+c	com/mojang/minecraft/Entity	com/mojang/minecraft/Entity
+	f	F	bbHeight	bbHeight
+	f	Lcom/mojang/minecraft/level/BlockMap;	blockMap	blockMap
+	f	F	heightOffset	heightOffset
+	f	Z	makeStepSound	makeStepSound
+	f	Z	removed	removed
+	f	J	serialVersionUID	serialVersionUID
+	f	F	x	x
+	f	F	xOld	xOld
+	f	F	xRot	xRot
+	f	F	y	y
+	f	F	yOld	yOld
+	f	F	yRot	yRot
+	f	F	z	z
+	f	F	zOld	zOld
+	m	(FFF)F	distanceTo	distanceTo
+	m	(Lcom/mojang/minecraft/Entity;)F	distanceToSqr	distanceToSqr
+	m	(Lcom/mojang/minecraft/Entity;I)V	hurt	hurt
+	m	(Lcom/mojang/minecraft/Entity;)V	playerTouch	playerTouch
+		p	1		entity
+	m	()V	remove	remove
+	m	(Lcom/mojang/minecraft/b/a;F)V	render$2a8c5a	render
+		p	1		textures
+		p	2		partialTick
+	m	(Lcom/mojang/minecraft/level/Level;)V	setLevel	setLevel
+	m	(FFF)V	setPos	setPos
+	m	(FF)V	setSize	setSize
+	m	()V	tick	tick
+c	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/MinecraftApplet
+c	com/mojang/minecraft/StopGameException	com/mojang/minecraft/StopGameException
+	f	J	serialVersionUID	serialVersionUID
+c	com/mojang/minecraft/a	com/mojang/minecraft/User
+	f	Ljava/util/List;	a	allowedTiles
+	f	Ljava/lang/String;	b	name
+	f	Ljava/lang/String;	c	sessionId
+	f	Ljava/lang/String;	d	mpPassword
+	f	Z	e	isPremium
+	m	(Ljava/lang/String;Ljava/lang/String;)V	<init>	
+		p	1		name
+		p	2		sessionId
+c	com/mojang/minecraft/a/a	com/mojang/minecraft/model/SheepFurModel
+c	com/mojang/minecraft/a/b	com/mojang/minecraft/model/Model
+	f	F	a	attackTime
+	m	(FFFFFF)V	a	render
+		p	1	f	time
+		p	2	f2	r
+		p	3	f3	bob
+		p	4	f4	yRot
+		p	5	f5	xRot
+		p	6	f6	scale
+c	com/mojang/minecraft/a/c	com/mojang/minecraft/model/Vec3
+	f	F	a	x
+	f	F	b	y
+	f	F	c	z
+	m	(FFF)V	<init>	
+		p	1		x
+		p	2		y
+		p	3		z
+	m	()Lcom/mojang/minecraft/a/c;	a	normalize
+	m	(FFF)Lcom/mojang/minecraft/a/c;	a	add
+		p	1		x
+		p	2		y
+		p	3		z
+	m	(Lcom/mojang/minecraft/a/c;)Lcom/mojang/minecraft/a/c;	a	vectorTo
+		p	1		other
+	m	(Lcom/mojang/minecraft/a/c;F)Lcom/mojang/minecraft/a/c;	a	clipX
+		p	1		other
+		p	2		lerp
+	m	(Lcom/mojang/minecraft/a/c;)F	b	distanceTo
+		p	1		other
+	m	(Lcom/mojang/minecraft/a/c;F)Lcom/mojang/minecraft/a/c;	b	clipY
+		p	1		other
+		p	2		lerp
+	m	(Lcom/mojang/minecraft/a/c;)F	c	distanceToSqr
+		p	1		other
+	m	(Lcom/mojang/minecraft/a/c;F)Lcom/mojang/minecraft/a/c;	c	clipZ
+		p	1		other
+		p	2		lerp
+c	com/mojang/minecraft/a/d	com/mojang/minecraft/model/SheepModel
+c	com/mojang/minecraft/a/e	com/mojang/minecraft/model/CreeperModel
+	f	Lcom/mojang/minecraft/a/n;	b	head
+	f	Lcom/mojang/minecraft/a/n;	c	hair
+	f	Lcom/mojang/minecraft/a/n;	d	body
+	f	Lcom/mojang/minecraft/a/n;	e	leg0
+	f	Lcom/mojang/minecraft/a/n;	f	leg1
+	f	Lcom/mojang/minecraft/a/n;	g	leg2
+	f	Lcom/mojang/minecraft/a/n;	h	leg3
+c	com/mojang/minecraft/a/f	com/mojang/minecraft/model/ZombieModel
+c	com/mojang/minecraft/a/g	com/mojang/minecraft/model/Models
+	f	Lcom/mojang/minecraft/a/k;	a	humanoid
+	f	Lcom/mojang/minecraft/a/k;	b	humanoidArmor
+	f	Lcom/mojang/minecraft/a/e;	c	creeper
+	f	Lcom/mojang/minecraft/a/h;	d	skeleton
+	f	Lcom/mojang/minecraft/a/f;	e	zombie
+	f	Lcom/mojang/minecraft/a/o;	f	pig
+	f	Lcom/mojang/minecraft/a/o;	g	sheep
+	f	Lcom/mojang/minecraft/a/m;	h	spider
+	f	Lcom/mojang/minecraft/a/d;	i	sheepFur
+	m	(Ljava/lang/String;)Lcom/mojang/minecraft/a/b;	a	getModel
+c	com/mojang/minecraft/a/h	com/mojang/minecraft/model/SkeletonModel
+c	com/mojang/minecraft/a/i	com/mojang/minecraft/model/Polygon
+	f	[Lcom/mojang/minecraft/a/l;	a	vertices
+	m	([Lcom/mojang/minecraft/a/l;)V	<init>	
+		p	1	lArray	vertices
+	m	([Lcom/mojang/minecraft/a/l;FFFF)V	<init>	
+		p	1	lArray	vertices
+		p	2	f	u0
+		p	3	f2	v0
+		p	4	f3	u1
+		p	5	f4	v1
+	m	([Lcom/mojang/minecraft/a/l;IIII)V	<init>	
+		p	1	lArray	vertices
+		p	2	n	u0
+		p	3	n2	v0
+		p	4	n3	u1
+		p	5	n4	v1
+c	com/mojang/minecraft/a/j	com/mojang/minecraft/model/PigModel
+c	com/mojang/minecraft/a/k	com/mojang/minecraft/model/HumanoidModel
+	f	Lcom/mojang/minecraft/a/n;	b	head
+	f	Lcom/mojang/minecraft/a/n;	c	hair
+	f	Lcom/mojang/minecraft/a/n;	d	body
+	f	Lcom/mojang/minecraft/a/n;	e	arm0
+	f	Lcom/mojang/minecraft/a/n;	f	arm1
+	f	Lcom/mojang/minecraft/a/n;	g	leg0
+	f	Lcom/mojang/minecraft/a/n;	h	leg1
+	m	(F)V	<init>	
+		p	1	f	g
+	m	(FFFFFF)V	b	setupAnim
+		p	1	f	time
+		p	2	f2	r
+		p	3	f3	bob
+		p	4	f4	yRot
+		p	5	f5	xRot
+		p	6	f6	scale
+c	com/mojang/minecraft/a/l	com/mojang/minecraft/model/Vertex
+	f	Lcom/mojang/minecraft/a/c;	a	pos
+	f	F	b	u
+	f	F	c	v
+	m	(FFFFF)V	<init>	
+		p	1	f	x
+		p	2	f2	y
+		p	3	f3	z
+		p	4	f4	u
+		p	5	f5	v
+	m	(Lcom/mojang/minecraft/a/c;FF)V	<init>	
+		p	1	c2	pos
+		p	2	f	u
+		p	3	f2	v
+	m	(Lcom/mojang/minecraft/a/l;FF)V	<init>	
+		p	1	l2	vertex
+		p	2	f	u
+		p	3	f2	v
+	m	(FF)Lcom/mojang/minecraft/a/l;	a	remap
+		p	1	f	u
+		p	2	f2	v
+c	com/mojang/minecraft/a/m	com/mojang/minecraft/model/SpiderModel
+	f	Lcom/mojang/minecraft/a/n;	b	head
+	f	Lcom/mojang/minecraft/a/n;	c	body0
+	f	Lcom/mojang/minecraft/a/n;	d	body1
+	f	Lcom/mojang/minecraft/a/n;	e	leg0
+	f	Lcom/mojang/minecraft/a/n;	f	leg1
+	f	Lcom/mojang/minecraft/a/n;	g	leg2
+	f	Lcom/mojang/minecraft/a/n;	h	leg3
+	f	Lcom/mojang/minecraft/a/n;	i	leg4
+	f	Lcom/mojang/minecraft/a/n;	j	leg5
+	f	Lcom/mojang/minecraft/a/n;	k	leg6
+	f	Lcom/mojang/minecraft/a/n;	l	leg7
+c	com/mojang/minecraft/a/n	com/mojang/minecraft/model/Cube
+	f	[Lcom/mojang/minecraft/a/l;	a	vertices
+	f	[Lcom/mojang/minecraft/a/i;	b	polygons
+	f	F	c	x
+	f	F	d	y
+	f	F	e	z
+	f	F	f	xRot
+	f	F	g	yRot
+	f	F	h	zRot
+	f	Z	i	compiled
+	f	I	j	list
+	f	Z	k	mirror
+	f	Z	l	visible
+	f	I	m	xTexOffs
+	f	I	n	yTexOffs
+	f	Z	o	neverRender
+	m	(II)V	<init>	
+		p	1	n2	xTexOffs
+		p	2	n3	yTexOffs
+	m	(F)V	a	render
+		p	1	f	scale
+	m	(FFF)V	a	setPos
+		p	1	f	x
+		p	2	f2	y
+		p	3	f3	z
+	m	(FFFIIIF)V	a	addBox
+		p	1	f	x0
+		p	2	f2	y0
+		p	3	f3	z0
+		p	4	n2	w
+		p	5	n3	h
+		p	6	n4	d
+		p	7	f4	g
+	m	(F)V	b	compile
+		p	1	f	scale
+c	com/mojang/minecraft/a/o	com/mojang/minecraft/model/QuadrupedModel
+	f	Lcom/mojang/minecraft/a/n;	b	head
+	f	Lcom/mojang/minecraft/a/n;	c	body
+	f	Lcom/mojang/minecraft/a/n;	d	leg0
+	f	Lcom/mojang/minecraft/a/n;	e	leg1
+	f	Lcom/mojang/minecraft/a/n;	f	leg2
+	f	Lcom/mojang/minecraft/a/n;	g	leg3
+	m	(IF)V	<init>	
+		p	1	n2	legSize
+		p	2	f	g
+c	com/mojang/minecraft/b	com/mojang/minecraft/GuiMessage
+	f	Ljava/lang/String;	a	message
+	f	I	b	id
+	m	(Ljava/lang/String;)V	<init>	
+		p	1		message
+c	com/mojang/minecraft/b/a	com/mojang/minecraft/renderer/Textures
+	f	Ljava/util/HashMap;	a	idMap
+	f	Ljava/util/HashMap;	b	loadedImages
+	f	Ljava/nio/IntBuffer;	c	ib
+	f	Ljava/nio/ByteBuffer;	d	pixels
+	f	Ljava/util/List;	e	dynamicTextures
+	f	Lcom/mojang/minecraft/k;	f	options
+	m	(Lcom/mojang/minecraft/b/a/c;)V	a	addDynamicTexture
+		p	1	c2	dynamicTexture
+	m	(Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;	a	makeStrip
+		p	0	bufferedImage	source
+	m	(Ljava/awt/image/BufferedImage;I)V	a	loadTexture
+		p	1	bufferedImage	img
+		p	2	n	id
+	m	(Ljava/lang/String;)I	a	loadTexture
+		p	1	string	resourceName
+	m	(Ljava/awt/image/BufferedImage;)I	b	getTexture
+		p	1	bufferedImage	img
+c	com/mojang/minecraft/b/a/a	com/mojang/minecraft/renderer/texture/LavaTexture
+	f	[F	d	current
+	f	[F	e	next
+	f	[F	f	heat
+	f	[F	g	heata
+c	com/mojang/minecraft/b/a/b	com/mojang/minecraft/renderer/texture/WaterTexture
+	f	[F	d	current
+	f	[F	e	next
+	f	[F	f	heat
+	f	[F	g	heata
+	f	I	h	tickCount
+c	com/mojang/minecraft/b/a/c	com/mojang/minecraft/renderer/texture/DynamicTexture
+	f	[B	a	pixels
+	f	I	b	tex
+	f	Z	c	anaglyph3d
+	m	(I)V	<init>	
+		p	1	n	tex
+	m	()V	a	tick
+c	com/mojang/minecraft/b/b	com/mojang/minecraft/renderer/DirtyChunkSorter
+	f	Lcom/mojang/minecraft/player/Player;	a	player
+	m	(Lcom/mojang/minecraft/player/Player;)V	<init>	
+		p	1	player	player
+c	com/mojang/minecraft/b/c	com/mojang/minecraft/renderer/Tesselator
+	f	Lcom/mojang/minecraft/b/c;	a	instance
+	f	Ljava/nio/FloatBuffer;	b	buffer
+	f	[F	c	array
+	f	I	d	vertices
+	f	F	e	u
+	f	F	f	v
+	f	F	g	r
+	f	F	h	g
+	f	F	i	b
+	f	Z	j	hasColor
+	f	Z	k	hasTexture
+	f	I	l	len
+	f	I	m	p
+	f	Z	n	noColor
+	m	()V	a	end
+	m	(FFF)V	a	color
+		p	1		r
+		p	2		g
+		p	3		b
+	m	(FFFFF)V	a	vertexUV
+		p	1		x
+		p	2		y
+		p	3		z
+		p	4		u
+		p	5		v
+	m	(I)V	a	color
+		p	1		c
+	m	()V	b	begin
+	m	(FFF)V	b	vertex
+		p	1		x
+		p	2		y
+		p	3		z
+	m	()V	c	noColor
+	m	(FFF)V	c	normal
+		p	1		x
+		p	2		y
+		p	3		z
+	m	()V	d	clear
+c	com/mojang/minecraft/b/d	com/mojang/minecraft/renderer/GameRenderer
+	f	Lcom/mojang/minecraft/l;	a	mc
+	f	F	d	renderDistance
+	f	Lcom/mojang/minecraft/b/h;	e	itemInHandRenderer
+	f	I	f	tick
+	f	Lcom/mojang/minecraft/Entity;	g	hovered
+	f	Ljava/util/Random;	h	random
+	f	F	i	fr
+	f	F	j	fg
+	f	F	k	fb
+	f	I	l	xMod
+	f	I	m	yMod
+	f	Ljava/nio/FloatBuffer;	n	lb
+	m	(Lcom/mojang/minecraft/l;)V	<init>	
+		p	1	l2	mc
+	m	()V	a	setupGuiCamera
+	m	(FFFF)Ljava/nio/FloatBuffer;	a	getBuffer
+	m	()V	b	setupFog
+	m	(F)V	b	bobHurt
+	m	(F)V	c	bobView
+c	com/mojang/minecraft/b/e	com/mojang/minecraft/renderer/Frustum
+	f	Lcom/mojang/minecraft/b/e;	e	frustum
+	f	Ljava/nio/FloatBuffer;	f	_proj
+	f	Ljava/nio/FloatBuffer;	g	_modl
+	f	Ljava/nio/FloatBuffer;	h	_clip
+	m	()Lcom/mojang/minecraft/b/i;	a	getFrustum
+	m	([[FI)V	a	normalizePlane
+		p	0	fArray	frustum
+		p	1	n	side
+c	com/mojang/minecraft/b/f	com/mojang/minecraft/renderer/DistanceChunkSorter
+c	com/mojang/minecraft/b/g	com/mojang/minecraft/renderer/LevelRenderer
+	f	Lcom/mojang/minecraft/level/Level;	a	level
+	f	Lcom/mojang/minecraft/b/a;	b	textures
+	f	Ljava/util/List;	e	dirtyChunks
+	f	[Lcom/mojang/minecraft/b/j;	f	chunks
+	f	Lcom/mojang/minecraft/l;	g	mc
+	f	I	h	frame
+	f	F	i	destroyProgress
+	f	[Lcom/mojang/minecraft/b/j;	j	sortedChunks
+	f	I	k	xChunks
+	f	I	l	yChunks
+	f	I	m	zChunks
+	f	I	n	chunkLists
+	f	[I	o	toRender
+	f	F	p	xOld
+	f	F	q	yOld
+	f	F	r	zOld
+	m	(Lcom/mojang/minecraft/l;Lcom/mojang/minecraft/b/a;)V	<init>	
+		p	1	l2	mc
+		p	2	a2	textures
+	m	()V	a	allChanged
+	m	(IIIIII)V	a	setDirty
+		p	1	n	x0
+		p	2	n2	y0
+		p	3	n3	z0
+		p	4	n4	x1
+		p	5	n5	y1
+		p	6	n6	z1
+	m	(Lcom/mojang/minecraft/player/Player;I)I	a	render
+		p	1	player	player
+		p	2	n	layer
+c	com/mojang/minecraft/b/h	com/mojang/minecraft/renderer/ItemInHandRenderer
+	f	Lcom/mojang/minecraft/l;	a	mc
+	f	F	c	handHeight
+	f	F	d	oHandHeight
+	m	(Lcom/mojang/minecraft/l;)V	<init>	
+		p	1	l2	mc
+c	com/mojang/minecraft/b/i	com/mojang/minecraft/renderer/FrustumData
+	f	[[F	a	frustumData
+	f	[F	b	proj
+	f	[F	c	modl
+	f	[F	d	clip
+	m	(FFFFFF)Z	a	cubeInFrustum
+		p	1		x1
+		p	2		y1
+		p	3		z1
+		p	4		x2
+		p	5		y2
+		p	6		z2
+c	com/mojang/minecraft/b/j	com/mojang/minecraft/renderer/Chunk
+	f	I	a	updates
+	f	Z	b	visible
+	f	Z	c	dirty
+	f	Lcom/mojang/minecraft/level/Level;	d	level
+	f	I	e	lists
+	f	Lcom/mojang/minecraft/b/c;	f	t
+	f	I	g	x
+	f	I	h	y
+	f	I	i	z
+	f	I	j	xs
+	f	I	k	ys
+	f	I	l	zs
+	f	[Z	m	empty
+	m	(Lcom/mojang/minecraft/level/Level;IIIII)V	<init>	
+		p	1		level
+		p	2		x
+		p	3		y
+		p	4		z
+		p	5	n4	size
+		p	6	n5	lists
+	m	()V	a	rebuild
+	m	(Lcom/mojang/minecraft/b/i;)V	a	cull
+		p	1	i2	frustumData
+	m	([III)I	a	getAllLists
+		p	1	nArray	displayLists
+		p	2	n	p
+		p	3	n2	layer
+	m	()V	b	delete
+	m	()V	c	reset
+c	com/mojang/minecraft/c	com/mojang/minecraft/BackgroundDownloader
+	f	Z	a	stopped
+	f	Ljava/io/File;	b	workingDirectory
+	f	Lcom/mojang/minecraft/l;	c	minecraft
+	m	(Ljava/io/File;Lcom/mojang/minecraft/l;)V	<init>	
+		p	1	file	workDir
+		p	2	l2	minecraft
+	m	(Ljava/net/URL;Ljava/io/File;)V	a	download
+		p	1	object	url
+		p	2	object2	file
+c	com/mojang/minecraft/c/a	com/mojang/minecraft/sound/Sound
+c	com/mojang/minecraft/c/i	com/mojang/minecraft/c/i
+	f	Z	a	loaded
+	f	Ljavax/sound/sampled/SourceDataLine;	b	sourceDataLine
+	f	Lcom/mojang/minecraft/k;	c	options
+	f	Ljava/util/List;	d	sounds
+	m	(Lcom/mojang/minecraft/k;)V	<init>	
+		p	1	k2	options
+	m	(Lcom/mojang/minecraft/c/a;)V	a	play
+		p	1	a2	sound
+	m	(Lcom/mojang/minecraft/c/h;Lcom/mojang/minecraft/c/f;)V	a	play
+c	com/mojang/minecraft/c/k	com/mojang/minecraft/sound/SoundEngine
+	m	(Ljava/io/File;Ljava/lang/String;)V	a	add
+		p	1	object	file
+		p	2	string	name
+	m	(Ljava/lang/String;Ljava/io/File;)V	a	add
+		p	1	string	name
+		p	2	file	file
+c	com/mojang/minecraft/d	com/mojang/minecraft/Timer
+	f	F	a	ticksPerSecond
+	f	D	b	lastTime
+	f	I	c	ticks
+	f	F	d	a
+	f	F	e	timeScale
+	f	F	f	passedTime
+	f	J	g	lastMs
+	f	J	h	lastMsSystemTime
+	f	D	i	adjustTime
+	m	(F)V	<init>	
+		p	1	f	ticksPerSecond
+c	com/mojang/minecraft/d/a	com/mojang/minecraft/gamemode/CreativeMode
+c	com/mojang/minecraft/d/b	com/mojang/minecraft/gamemode/GameMode
+	f	Lcom/mojang/minecraft/l;	a	minecraft
+	f	Z	b	instaBuild
+	m	(Lcom/mojang/minecraft/l;)V	<init>	
+		p	1		minecraft
+	m	(F)V	a	render
+		p	1		partialTick
+	m	(I)Z	a	removeResource
+	m	(III)V	a	startDestroyBlock
+		p	1		x
+		p	2		y
+		p	3		z
+	m	(IIII)V	a	continueDestroyBlock
+		p	1		x
+		p	2		y
+		p	3		z
+		p	4		face
+	m	(Lcom/mojang/minecraft/level/Level;)V	a	initLevel
+		p	1		level
+	m	(Lcom/mojang/minecraft/player/Player;)V	a	adjustPlayer
+		p	1		player
+	m	(Lcom/mojang/minecraft/player/Player;I)Z	a	useItem
+		p	1		player
+	m	()Z	b	isSurvivalType
+	m	(III)V	b	destroyBlock
+		p	1		x
+		p	2		y
+		p	3		z
+	m	(Lcom/mojang/minecraft/level/Level;)V	b	
+		p	1		level
+	m	(Lcom/mojang/minecraft/player/Player;)V	b	initPlayer
+	m	()V	c	stopDestroyBlock
+	m	()F	d	getPickRange
+	m	()V	e	tick
+c	com/mojang/minecraft/d/c	com/mojang/minecraft/gamemode/SurvivalMode
+	f	I	c	xDestroyBlock
+	f	I	d	yDestroyBlock
+	f	I	e	zDestroyBlock
+	f	I	f	destroyProgress
+	f	I	g	oDestroyProgress
+	f	I	h	destroyDelay
+c	com/mojang/minecraft/e	2
+	m	(Lcom/mojang/minecraft/l;)V	<init>	
+		p	1		minecraft
+c	com/mojang/minecraft/e/a	com/mojang/minecraft/gui/NameEntryScreen
+	f	Lcom/mojang/minecraft/e/o;	g	lastScreen
+	f	Ljava/lang/String;	h	title
+	f	I	j	slot
+	f	Ljava/lang/String;	k	name
+	f	I	l	frame
+	m	(Lcom/mojang/minecraft/e/o;Ljava/lang/String;I)V	<init>	
+		p	1	o	lastScreen
+		p	2	string	slot
+		p	3	integer	name
+c	com/mojang/minecraft/e/b	com/mojang/minecraft/gui/JoinMultiplayerScreen
+c	com/mojang/minecraft/e/c	com/mojang/minecraft/gui/ControlsScreen
+	f	Lcom/mojang/minecraft/e/o;	g	lastScreen
+	f	Ljava/lang/String;	h	title
+	f	Lcom/mojang/minecraft/k;	j	options
+	f	I	k	selectedKey
+	m	(Lcom/mojang/minecraft/e/o;Lcom/mojang/minecraft/k;)V	<init>	
+		p	1	o	lastScreen
+		p	2	k	options
+c	com/mojang/minecraft/e/d	com/mojang/minecraft/gui/SelectBlockScreen
+c	com/mojang/minecraft/e/e	com/mojang/minecraft/gui/Button
+	f	I	a	w
+	f	I	b	h
+	f	I	c	x
+	f	I	d	y
+	f	Ljava/lang/String;	e	msg
+	f	I	f	id
+	f	Z	g	active
+	f	Z	h	visible
+	m	(IIIIILjava/lang/String;)V	<init>	
+		p	1		id
+		p	2		x
+		p	3		y
+		p	4		w
+		p	5		h
+		p	6		msg
+	m	(IIILjava/lang/String;)V	<init>	
+		p	1		id
+		p	2		x
+		p	3		y
+		p	4		msg
+c	com/mojang/minecraft/e/f	com/mojang/minecraft/gui/OptionsScreen
+	f	Lcom/mojang/minecraft/e/o;	g	lastScreen
+	f	Ljava/lang/String;	h	title
+	f	Lcom/mojang/minecraft/k;	j	options
+	m	(Lcom/mojang/minecraft/e/o;Lcom/mojang/minecraft/k;)V	<init>	
+		p	1	o	lastScreen
+		p	2	k	options
+c	com/mojang/minecraft/e/g	com/mojang/minecraft/gui/GenerateLevelScreen
+c	com/mojang/minecraft/e/h	com/mojang/minecraft/gui/GuiComponent
+	f	F	i	blitOffset
+	m	(IIIII)V	a	fill
+		p	0		x0
+		p	1		y0
+		p	2		x1
+		p	3		y1
+		p	4		color
+	m	(IIIIII)V	a	fillGradient
+		p	0		x0
+		p	1		y0
+		p	2		x1
+		p	3		y1
+		p	4		color0
+		p	5		color1
+	m	(Lcom/mojang/minecraft/e/l;Ljava/lang/String;III)V	a	drawCenteredString
+		p	0		font
+		p	1		string
+		p	2		x
+		p	3		y
+		p	4		color
+	m	(IIIIII)V	b	blit
+		p	1		x
+		p	2		y
+		p	3		u
+		p	4		v
+		p	5		width
+		p	6		height
+	m	(Lcom/mojang/minecraft/e/l;Ljava/lang/String;III)V	b	drawString
+		p	0		font
+		p	1		string
+		p	2		x
+		p	3		y
+		p	4		color
+c	com/mojang/minecraft/e/i	com/mojang/minecraft/gui/SmallButton
+c	com/mojang/minecraft/e/j	com/mojang/minecraft/gui/CrashReportScreen
+	f	Ljava/lang/String;	g	title
+	f	Ljava/lang/String;	h	body
+	m	(Ljava/lang/String;Ljava/lang/String;)V	<init>	
+		p	1	string1	title
+		p	2	string2	body
+c	com/mojang/minecraft/e/k	com/mojang/minecraft/gui/SaveLevelScreen
+c	com/mojang/minecraft/e/l	com/mojang/minecraft/gui/Font
+c	com/mojang/minecraft/e/m	com/mojang/minecraft/gui/Gui
+	f	Lcom/mojang/minecraft/l;	e	minecraft
+	f	I	f	width
+	f	I	g	height
+	m	(Lcom/mojang/minecraft/l;II)V	<init>	
+		p	1		minecraft
+		p	2		width
+		p	3		height
+c	com/mojang/minecraft/e/n	com/mojang/minecraft/gui/PauseScreen
+c	com/mojang/minecraft/e/o	com/mojang/minecraft/gui/Screen
+	f	Lcom/mojang/minecraft/l;	a	minecraft
+	f	I	b	width
+	f	I	c	height
+	f	Ljava/util/List;	d	buttons
+	f	Z	e	passEvents
+	f	Lcom/mojang/minecraft/e/l;	f	font
+	m	()V	a	init
+	m	(CI)V	a	keyPressed
+		p	1		eventCharacter
+		p	2		eventKey
+	m	(II)V	a	render
+		p	1		xm
+		p	2		ym
+	m	(III)V	a	mouseClicked
+		p	1		x
+		p	2		y
+		p	3		buttonNum
+		p	8	var8	i
+	m	(Lcom/mojang/minecraft/e/e;)V	a	buttonClicked
+		p	1		button
+	m	(Lcom/mojang/minecraft/l;II)V	a	init
+		p	1		minecraft
+		p	2		width
+		p	3		height
+	m	()V	b	removed
+	m	()V	c	tick
+	m	()V	d	updateEvents
+	m	()V	e	mouseEvent
+	m	()V	f	keyboardEvent
+c	com/mojang/minecraft/e/p	1
+c	com/mojang/minecraft/e/q	com/mojang/minecraft/gui/LevelListScreen
+	f	Lcom/mojang/minecraft/e/o;	g	lastScreen
+	f	Ljava/lang/String;	h	title
+	m	(Lcom/mojang/minecraft/e/o;)V	<init>	
+		p	1	o	lastScreen
+c	com/mojang/minecraft/e/r	com/mojang/minecraft/gui/DeathScreen
+c	com/mojang/minecraft/f	com/mojang/minecraft/OS_Ordinals
+c	com/mojang/minecraft/g	com/mojang/minecraft/HitResult
+	f	I	a	hitType
+	f	I	b	x
+	f	I	c	y
+	f	I	d	z
+	f	I	e	face
+	f	Lcom/mojang/minecraft/a/c;	f	location
+	f	Lcom/mojang/minecraft/Entity;	g	entity
+	m	(IIIILcom/mojang/minecraft/a/c;)V	<init>	
+		p	1		x
+		p	2		y
+		p	3		z
+		p	4		face
+		p	5		location
+	m	(Lcom/mojang/minecraft/Entity;)V	<init>	
+		p	1		entity
+c	com/mojang/minecraft/h	1
+c	com/mojang/minecraft/i	com/mojang/minecraft/ProgressRenderer
+	f	Ljava/lang/String;	a	status
+	f	Lcom/mojang/minecraft/l;	b	minecraft
+	f	Ljava/lang/String;	c	title
+	f	J	d	lastTime
+	m	(Lcom/mojang/minecraft/l;)V	<init>	
+		p	1	l2	minecraft
+	m	(I)V	a	progressStagePercentage
+		p	1	n	i
+	m	(Ljava/lang/String;)V	a	progressStart
+		p	1	string	title
+	m	(Ljava/lang/String;)V	b	progressStage
+		p	1	string	status
+c	com/mojang/minecraft/item/Arrow	com/mojang/minecraft/item/Arrow
+c	com/mojang/minecraft/item/Item	com/mojang/minecraft/item/Item
+	f	[Lcom/mojang/minecraft/item/a;	a	models
+	f	I	age	age
+	f	I	resource	resource
+	f	F	rot	rot
+	f	I	tickCount	tickCount
+	f	F	xd	xd
+	f	F	yd	yd
+	f	F	zd	zd
+	m	(Lcom/mojang/minecraft/level/Level;FFFI)V	<init>	
+		p	1		level
+		p	2		x
+		p	3		y
+		p	4		z
+		p	5		resource
+	m	()V	initModels	initModels
+c	com/mojang/minecraft/item/PrimedTnt	com/mojang/minecraft/item/PrimedTnt
+c	com/mojang/minecraft/item/TakeEntityAnim	com/mojang/minecraft/item/TakeEntityAnim
+c	com/mojang/minecraft/item/a	com/mojang/minecraft/item/ItemModel
+c	com/mojang/minecraft/j	com/mojang/minecraft/KeyMapping
+	f	Ljava/lang/String;	a	name
+	f	I	b	defaultKey
+	m	(Ljava/lang/String;I)V	<init>	
+		p	1		name
+		p	2		defaultKey
+c	com/mojang/minecraft/k	com/mojang/minecraft/Options
+	f	Z	a	music
+	f	Z	b	sound
+	f	Z	c	invertYMouse
+	f	Z	d	showFrameRate
+	f	I	e	viewDistance
+	f	Z	f	bobView
+	f	Z	g	anaglyph3d
+	f	Z	h	limitFramerate
+	f	Lcom/mojang/minecraft/j;	i	keyUp
+	f	Lcom/mojang/minecraft/j;	j	keyLeft
+	f	Lcom/mojang/minecraft/j;	k	keyDown
+	f	Lcom/mojang/minecraft/j;	l	keyRight
+	f	Lcom/mojang/minecraft/j;	m	keyJump
+	f	Lcom/mojang/minecraft/j;	n	keyBuild
+	f	Lcom/mojang/minecraft/j;	o	keyChat
+	f	Lcom/mojang/minecraft/j;	p	keyToggleFog
+	f	Lcom/mojang/minecraft/j;	q	keySaveLocation
+	f	Lcom/mojang/minecraft/j;	r	keyLoadLocation
+	f	[Lcom/mojang/minecraft/j;	s	keyMappings
+	f	I	t	numOptions
+	f	[Ljava/lang/String;	u	renderDistanceNames
+	f	Lcom/mojang/minecraft/l;	v	minecraft
+	f	Ljava/io/File;	w	optionsFile
+	m	(Lcom/mojang/minecraft/l;Ljava/io/File;)V	<init>	
+		p	1		minecraft
+		p	2		baseDir
+	m	()V	a	load
+	m	(I)Ljava/lang/String;	a	getKeyMessage
+	m	(II)V	a	setKey
+	m	()V	b	save
+	m	(I)Ljava/lang/String;	b	getMessage
+		p	1		i
+	m	(II)V	b	toggle
+c	com/mojang/minecraft/l	com/mojang/minecraft/Minecraft
+	f	Lcom/mojang/minecraft/g;	A	hitResult
+	f	Lcom/mojang/minecraft/k;	B	options
+	f	Ljava/lang/String;	C	connectToIp
+	f	I	D	connectToPort
+	f	Z	E	running
+	f	Ljava/lang/String;	F	fpsString
+	f	Z	G	wasDown
+	f	Z	H	mouseGrabbed
+	f	Z	I	fullscreen
+	f	Lcom/mojang/minecraft/d;	J	timer
+	f	Lorg/lwjgl/input/Cursor;	K	cursor
+	f	Lcom/mojang/minecraft/c;	L	resourceThread
+	f	I	M	ticks
+	f	I	N	missTime
+	f	Lcom/mojang/minecraft/MinecraftApplet;	O	minecraftApplet
+	f	I	P	lastTimer
+	f	Lcom/mojang/minecraft/d/b;	a	gameMode
+	f	I	b	width
+	f	I	c	height
+	f	Lcom/mojang/minecraft/level/Level;	d	level
+	f	Lcom/mojang/minecraft/b/g;	e	levelRenderer
+	f	Lcom/mojang/minecraft/player/Player;	f	player
+	f	Lcom/mojang/minecraft/particle/a;	g	particleEngine
+	f	Lcom/mojang/minecraft/a;	h	user
+	f	Ljava/lang/String;	i	serverDomain
+	f	Ljava/awt/Canvas;	j	parent
+	f	Z	k	appletMode
+	f	Z	l	pause
+	f	Lcom/mojang/minecraft/b/a;	m	textures
+	f	Lcom/mojang/minecraft/e/l;	n	font
+	f	Lcom/mojang/minecraft/e/o;	o	screen
+	f	Lcom/mojang/minecraft/i;	p	progressRenderer
+	f	Lcom/mojang/minecraft/b/d;	q	gameRenderer
+	f	Lcom/mojang/minecraft/c/k;	s	soundEngine
+	f	Ljava/lang/String;	t	autoLoad_user
+	f	I	u	autoLoad_id
+	f	Ljava/awt/Robot;	v	robot
+	f	Lcom/mojang/minecraft/e/m;	w	gui
+	f	Z	x	noRender
+	m	(Ljava/awt/Canvas;Lcom/mojang/minecraft/MinecraftApplet;IIZ)V	<init>	
+		p	1	canvas	canvas
+		p	2	minecraftApplet	minecraftApplet
+		p	3	integer3	width
+		p	4	integer4	height
+		p	5	boolean5	fullscreen
+	m	()V	a	destroy
+	m	(Lcom/mojang/minecraft/e/o;)V	a	setScreen
+		p	1	o	screen
+	m	(Ljava/lang/String;)V	a	checkGlError
+		p	0	string	status
+	m	()V	b	grabMouse
+	m	()V	c	pauseGame
+c	com/mojang/minecraft/level/BlockMap	com/mojang/minecraft/level/BlockMap
+	f	Ljava/util/List;	all	all
+	f	I	depth	depth
+	f	[Ljava/util/List;	entityGrid	entityGrid
+	f	I	height	height
+	f	J	serialVersionUID	serialVersionUID
+	f	Lcom/mojang/minecraft/level/BlockMap$Slot;	slot	slot
+	f	Lcom/mojang/minecraft/level/BlockMap$Slot;	slot2	slot2
+	f	Ljava/util/List;	tmp	tmp
+	f	I	width	width
+	m	(III)V	<init>	
+		p	1		width
+		p	2		depth
+		p	3		height
+	m	(Lcom/mojang/minecraft/level/BlockMap;)I	access$000	access$000
+	m	(Lcom/mojang/minecraft/level/BlockMap;)I	access$100	access$100
+	m	(Lcom/mojang/minecraft/level/BlockMap;)I	access$200	access$200
+	m	()V	clear	clear
+	m	(Lcom/mojang/minecraft/Entity;FFFFFF)Ljava/util/List;	getEntities	getEntities
+		p	1		entity
+		p	2	float2	xx0
+		p	3	float3	yy0
+		p	4	float4	zz0
+		p	5	float5	xx1
+		p	6	float6	yy1
+		p	7	float7	zz1
+	m	(Lcom/mojang/minecraft/Entity;FFFFFFLjava/util/List;)Ljava/util/List;	getEntities	getEntities
+		p	1		entity
+		p	2	float2	xx0
+		p	3	float3	yy0
+		p	4	float4	zz0
+		p	5	float5	xx1
+		p	6	float6	yy1
+		p	7	float7	zz1
+		p	8	list	out
+	m	(Lcom/mojang/minecraft/Entity;Lcom/mojang/minecraft/phys/AABB;)Ljava/util/List;	getEntities	getEntities
+		p	1		entity
+	m	(Lcom/mojang/minecraft/Entity;Lcom/mojang/minecraft/phys/AABB;Ljava/util/List;)Ljava/util/List;	getEntities	getEntities
+		p	1		entity
+	m	(Lcom/mojang/minecraft/Entity;)V	insert	insert
+		p	1		entity
+	m	(Lcom/mojang/minecraft/Entity;)V	moved	moved
+		p	1		entity
+	m	(Lcom/mojang/minecraft/Entity;)V	remove	remove
+		p	1		entity
+	m	()V	removeAllNonCreativeModeEntities	removeAllNonCreativeModeEntities
+	m	(Lcom/mojang/minecraft/a/c;Lcom/mojang/minecraft/b/i;Lcom/mojang/minecraft/b/a;F)V	render$7127a881	render
+	m	()V	tickAll	tickAll
+c	com/mojang/minecraft/level/BlockMap$Slot	com/mojang/minecraft/level/BlockMap$Slot
+	m	(Lcom/mojang/minecraft/Entity;)V	add	add
+	m	(FFF)Lcom/mojang/minecraft/level/BlockMap$Slot;	init	init
+	m	(Lcom/mojang/minecraft/Entity;)V	remove	remove
+c	com/mojang/minecraft/level/Level	com/mojang/minecraft/level/Level
+	f	[I	b	heightMap
+	f	Lcom/mojang/minecraft/level/BlockMap;	blockMap	blockMap
+	f	[B	blocks	blocks
+	f	I	cloudColor	cloudColor
+	f	J	createTime	createTime
+	f	Z	creativeMode	creativeMode
+	f	Ljava/lang/String;	creator	creator
+	f	I	depth	depth
+	f	I	fogColor	fogColor
+	f	Ljava/lang/Object;	font	font
+	f	Z	growTrees	growTrees
+	f	I	height	height
+	f	Ljava/lang/String;	name	name
+	f	Z	networkMode	networkMode
+	f	Lcom/mojang/minecraft/particle/a;	particleEngine$13e306ae	particleEngine
+	f	Lcom/mojang/minecraft/Entity;	player	player
+	f	Ljava/util/Random;	random	random
+	f	Lcom/mojang/minecraft/l;	rendererContext$5cd64a7f	rendererContext
+	f	F	rotSpawn	rotSpawn
+	f	J	serialVersionUID	serialVersionUID
+	f	I	skyColor	skyColor
+	f	I	tickCount	tickCount
+	f	I	unprocessed	unprocessed
+	f	I	waterLevel	waterLevel
+	f	I	width	width
+	f	I	xSpawn	xSpawn
+	f	I	ySpawn	ySpawn
+	f	I	zSpawn	zSpawn
+	m	(Lcom/mojang/minecraft/Entity;)V	addEntity	addEntity
+		p	1		entity
+	m	(Lcom/mojang/minecraft/b/g;)V	addListener$74652038	addListener
+	m	(IIII)V	addToTickNextTick	addToTickNextTick
+	m	(IIII)V	calcLightDepths	calcLightDepths
+	m	(Lcom/mojang/minecraft/a/c;Lcom/mojang/minecraft/a/c;)Lcom/mojang/minecraft/g;	clip	clip
+		p	1		a
+		p	2		b
+	m	(Lcom/mojang/minecraft/phys/AABB;)Z	containsAnyLiquid	containsAnyLiquid
+	m	(Lcom/mojang/minecraft/phys/AABB;Lcom/mojang/minecraft/level/b/a;)Z	containsLiquid	containsLiquid
+	m	()[B	copyBlocks	copyBlocks
+	m	(Ljava/lang/Class;)I	countInstanceOf	countInstanceOf
+	m	(Lcom/mojang/minecraft/Entity;FFFF)V	explode	explode
+	m	(Lcom/mojang/minecraft/Entity;Lcom/mojang/minecraft/phys/AABB;)Ljava/util/List;	findEntities	findEntities
+	m	()V	findSpawn	findSpawn
+	m	(Ljava/lang/Class;)Lcom/mojang/minecraft/Entity;	findSubclassOf	findSubclassOf
+	m	(III)F	getBrightness	getBrightness
+	m	(FFFF)F	getCaveness	getCaveness
+	m	(Lcom/mojang/minecraft/Entity;)F	getCaveness	getCaveness
+		p	1		entity
+	m	(Lcom/mojang/minecraft/phys/AABB;)Ljava/util/ArrayList;	getCubes	getCubes
+		p	1		bb
+	m	()F	getGroundLevel	getGroundLevel
+	m	(II)I	getHighestTile	getHighestTile
+	m	(III)Lcom/mojang/minecraft/level/b/a;	getLiquid	getLiquid
+	m	()Lcom/mojang/minecraft/Entity;	getPlayer	getPlayer
+	m	(III)I	getTile	getTile
+	m	()F	getWaterLevel	getWaterLevel
+	m	()V	initTransient	initTransient
+	m	(Lcom/mojang/minecraft/phys/AABB;)Z	isFree	isFree
+	m	(III)Z	isLightBlocker	isLightBlocker
+	m	(III)Z	isLit	isLit
+	m	(FFFF)Z	isSolid	isSolid
+	m	(III)Z	isSolidTile	isSolidTile
+	m	(III)Z	isWater	isWater
+	m	(III)Z	maybeGrowTree	maybeGrowTree
+		p	1		x
+		p	2		y
+		p	3		z
+	m	(IIII)Z	netSetTile	netSetTile
+	m	(IIII)Z	netSetTileNoNeighborChange	netSetTileNoNeighborChange
+	m	(Ljava/lang/String;FFFFF)V	playSound	playSound
+	m	(Ljava/lang/String;Lcom/mojang/minecraft/Entity;FF)V	playSound	playSound
+	m	()V	removeAllNonCreativeModeEntities	removeAllNonCreativeModeEntities
+	m	(Lcom/mojang/minecraft/Entity;)V	removeEntity	removeEntity
+		p	1		entity
+	m	(Lcom/mojang/minecraft/b/g;)V	removeListener$74652038	removeListener
+	m	(III[B)V	setData	setData
+		p	1		width
+		p	2		height
+		p	3		depth
+		p	4		blocks
+	m	(Z)V	setNetworkMode	setNetworkMode
+	m	(IIIF)V	setSpawnPos	setSpawnPos
+	m	(IIII)Z	setTile	setTile
+	m	(IIII)Z	setTileNoNeighborChange	setTileNoNeighborChange
+	m	(IIII)Z	setTileNoUpdate	setTileNoUpdate
+	m	(IIIIII)V	swap	swap
+	m	()V	tick	tick
+	m	()V	tickEntities	tickEntities
+	m	(IIII)V	updateNeighborsAt	updateNeighborsAt
+c	com/mojang/minecraft/level/a/a	com/mojang/minecraft/level/levelgen/LevelGen
+	f	Lcom/mojang/minecraft/i;	a	progressScreen
+	f	I	b	width
+	f	I	c	depth
+	f	I	d	height
+	f	Ljava/util/Random;	e	random
+	f	[B	f	blocks
+	f	I	g	waterLevel
+	m	(Lcom/mojang/minecraft/i;)V	<init>	
+		p	1		progressScreen
+	m	(I)V	a	updateProgress
+		p	1		amount
+	m	(Ljava/lang/String;III)Lcom/mojang/minecraft/level/Level;	a	create
+		p	1		creator
+		p	2		width
+		p	3		depth
+		p	4		height
+c	com/mojang/minecraft/level/a/a/a	com/mojang/minecraft/level/levelgen/synth/Synth
+	m	(DD)D	a	getValue
+		p	1		x
+		p	3		y
+c	com/mojang/minecraft/level/a/a/b	com/mojang/minecraft/level/levelgen/synth/PerlinNoise
+	f	[Lcom/mojang/minecraft/level/a/a/d;	a	noiseLevels
+	f	I	b	levels
+	m	(Ljava/util/Random;I)V	<init>	
+		p	1		random
+		p	2		levels
+c	com/mojang/minecraft/level/a/a/c	com/mojang/minecraft/level/levelgen/synth/CompositeNoise
+	f	Lcom/mojang/minecraft/level/a/a/a;	a	a
+	f	Lcom/mojang/minecraft/level/a/a/a;	b	b
+	m	(Lcom/mojang/minecraft/level/a/a/a;Lcom/mojang/minecraft/level/a/a/a;)V	<init>	
+		p	1		a
+		p	2		b
+c	com/mojang/minecraft/level/a/a/d	com/mojang/minecraft/level/levelgen/synth/ImprovedNoise
+	f	[I	a	p
+	m	(Ljava/util/Random;)V	<init>	
+		p	1		random
+	m	(D)D	a	fade
+		p	0		t
+	m	(DDD)D	a	lerp
+		p	0		t
+		p	2		a
+		p	4		b
+	m	(IDDD)D	a	grad
+		p	0		hash
+		p	1		x
+		p	3		y
+		p	5		z
+c	com/mojang/minecraft/level/b	com/mojang/minecraft/level/MobSpawner
+	f	Lcom/mojang/minecraft/level/Level;	a	level
+	m	(Lcom/mojang/minecraft/level/Level;)V	<init>	
+		p	1		level
+	m	(ILcom/mojang/minecraft/Entity;Lcom/mojang/minecraft/i;)I	a	tick
+c	com/mojang/minecraft/level/b/a	com/mojang/minecraft/level/material/Material
+	f	Lcom/mojang/minecraft/level/b/a;	a	air
+	f	Lcom/mojang/minecraft/level/b/a;	b	water
+	f	Lcom/mojang/minecraft/level/b/a;	c	lava
+	f	[Lcom/mojang/minecraft/level/b/a;	d	materials
+	m	(I)V	<init>	
+		p	1	integer	i
+c	com/mojang/minecraft/level/d	com/mojang/minecraft/level/TickNextTickData
+	f	I	a	type
+	f	I	b	x
+	f	I	c	y
+	f	I	d	z
+	f	I	e	delay
+	m	(IIII)V	<init>	
+		p	1		type
+		p	2		x
+		p	3		y
+		p	4		z
+c	com/mojang/minecraft/level/tile/a	com/mojang/minecraft/level/tile/Tile
+	f	Lcom/mojang/minecraft/level/tile/a;	A	cloth_02
+	f	Lcom/mojang/minecraft/level/tile/a;	B	cloth_03
+	f	Lcom/mojang/minecraft/level/tile/a;	C	cloth_04
+	f	Lcom/mojang/minecraft/level/tile/a;	D	cloth_05
+	f	Lcom/mojang/minecraft/level/tile/a;	E	cloth_06
+	f	Lcom/mojang/minecraft/level/tile/a;	F	cloth_07
+	f	Lcom/mojang/minecraft/level/tile/a;	G	cloth_08
+	f	Lcom/mojang/minecraft/level/tile/a;	H	cloth_09
+	f	Lcom/mojang/minecraft/level/tile/a;	I	cloth_10
+	f	Lcom/mojang/minecraft/level/tile/a;	J	cloth_11
+	f	Lcom/mojang/minecraft/level/tile/a;	K	cloth_12
+	f	Lcom/mojang/minecraft/level/tile/a;	L	cloth_13
+	f	Lcom/mojang/minecraft/level/tile/a;	M	cloth_14
+	f	Lcom/mojang/minecraft/level/tile/a;	N	cloth_15
+	f	Lcom/mojang/minecraft/level/tile/a;	O	flower
+	f	Lcom/mojang/minecraft/level/tile/a;	P	rose
+	f	Lcom/mojang/minecraft/level/tile/a;	Q	mushroom1
+	f	Lcom/mojang/minecraft/level/tile/a;	R	mushroom2
+	f	Lcom/mojang/minecraft/level/tile/a;	S	goldBlock
+	f	Lcom/mojang/minecraft/level/tile/a;	T	ironBlock
+	f	Lcom/mojang/minecraft/level/tile/a;	U	stoneSlab
+	f	Lcom/mojang/minecraft/level/tile/a;	V	stoneSlabHalf
+	f	Lcom/mojang/minecraft/level/tile/a;	W	redBrick
+	f	Lcom/mojang/minecraft/level/tile/a;	X	tnt
+	f	Lcom/mojang/minecraft/level/tile/a;	Y	bookshelf
+	f	Lcom/mojang/minecraft/level/tile/a;	Z	mossStone
+	f	Ljava/util/Random;	a	random
+	f	Lcom/mojang/minecraft/level/tile/a;	aa	obsidian
+	f	I	ab	tex
+	f	I	ac	id
+	f	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	ad	soundType
+	f	F	ae	xx0
+	f	F	af	yy0
+	f	F	ag	zz0
+	f	F	ah	xx1
+	f	F	ai	yy1
+	f	F	aj	zz1
+	f	F	ak	particleGravity
+	f	[Z	al	solid
+	f	I	ao	destroySpeed
+	f	[Lcom/mojang/minecraft/level/tile/a;	b	tiles
+	f	[Z	c	shouldTick
+	f	Lcom/mojang/minecraft/level/tile/a;	e	rock
+	f	Lcom/mojang/minecraft/level/tile/a;	f	grass
+	f	Lcom/mojang/minecraft/level/tile/a;	g	dirt
+	f	Lcom/mojang/minecraft/level/tile/a;	h	stoneBrick
+	f	Lcom/mojang/minecraft/level/tile/a;	i	wood
+	f	Lcom/mojang/minecraft/level/tile/a;	j	sapling
+	f	Lcom/mojang/minecraft/level/tile/a;	k	unbreakable
+	f	Lcom/mojang/minecraft/level/tile/a;	l	water
+	f	Lcom/mojang/minecraft/level/tile/a;	m	calmWater
+	f	Lcom/mojang/minecraft/level/tile/a;	n	lava
+	f	Lcom/mojang/minecraft/level/tile/a;	o	calmLava
+	f	Lcom/mojang/minecraft/level/tile/a;	p	sand
+	f	Lcom/mojang/minecraft/level/tile/a;	q	gravel
+	f	Lcom/mojang/minecraft/level/tile/a;	r	goldOre
+	f	Lcom/mojang/minecraft/level/tile/a;	s	ironOre
+	f	Lcom/mojang/minecraft/level/tile/a;	t	coalOre
+	f	Lcom/mojang/minecraft/level/tile/a;	u	treeTrunk
+	f	Lcom/mojang/minecraft/level/tile/a;	v	leaves
+	f	Lcom/mojang/minecraft/level/tile/a;	w	sponge
+	f	Lcom/mojang/minecraft/level/tile/a;	x	glass
+	f	Lcom/mojang/minecraft/level/tile/a;	y	cloth_00
+	f	Lcom/mojang/minecraft/level/tile/a;	z	cloth_01
+	m	(I)V	<init>	
+		p	1		id
+	m	(II)V	<init>	
+		p	1	integer1	id
+		p	2	integer2	tex
+		p	3	var3	i
+	m	()Z	a	isCubeShaped
+	m	(FFFFFF)V	a	setShape
+		p	1		x0
+		p	2		y0
+		p	3		z0
+		p	4		x1
+		p	5		y1
+		p	6		z1
+	m	(III)Lcom/mojang/minecraft/phys/AABB;	a	getTileAABB
+		p	1		x
+		p	2		y
+		p	3		z
+	m	(IIILcom/mojang/minecraft/a/c;Lcom/mojang/minecraft/a/c;)Lcom/mojang/minecraft/g;	a	clip
+		p	1		x
+		p	2		y
+		p	3		z
+		p	4		a
+		p	5		b
+	m	(Lcom/mojang/minecraft/a/c;)Z	a	containsX
+	m	(Lcom/mojang/minecraft/b/c;)V	a	render
+		p	1		t
+	m	(Lcom/mojang/minecraft/b/c;IIII)V	a	renderFace
+		p	1		t
+		p	2		x
+		p	3		y
+		p	4		z
+		p	5		face
+	m	(Lcom/mojang/minecraft/b/c;IIIII)V	a	renderFace
+		p	1		t
+		p	2		x
+		p	3		y
+		p	4		z
+		p	5		face
+		p	6		tex
+	m	(Lcom/mojang/minecraft/level/Level;III)F	a	getBrightness
+		p	1	level	level
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+	m	(Lcom/mojang/minecraft/level/Level;IIIF)V	a	spawnResources
+		p	1	level	level
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+		p	5	float5	chance
+	m	(Lcom/mojang/minecraft/level/Level;IIII)Z	a	shouldRenderFace
+		p	1		level
+		p	2		x
+		p	3		y
+		p	4		z
+		p	5		layer
+	m	(Lcom/mojang/minecraft/level/Level;IIILcom/mojang/minecraft/particle/a;)V	a	destroy
+		p	1		level
+		p	2		x
+		p	3		y
+		p	4		z
+		p	5		particleEngine
+	m	(Lcom/mojang/minecraft/level/Level;IIILjava/util/Random;)V	a	tick
+		p	1		level
+		p	2		x
+		p	3		y
+		p	4		z
+		p	5		random
+	m	(Lcom/mojang/minecraft/level/tile/Tile$SoundType;FFF)Lcom/mojang/minecraft/level/tile/a;	a	setSoundType
+		p	1		soundType
+	m	(Z)V	a	setTicking
+		p	1		ticking
+	m	()Z	b	blocksLight
+	m	(I)I	b	getTexture
+		p	1		face
+	m	(III)Lcom/mojang/minecraft/phys/AABB;	b	getAABB
+		p	1		x
+		p	2		y
+		p	3		z
+	m	(Lcom/mojang/minecraft/a/c;)Z	b	containsY
+	m	(Lcom/mojang/minecraft/b/c;IIII)V	b	renderFace2
+		p	1		t
+		p	2		x
+		p	3		y
+		p	4		z
+		p	5		face
+	m	(Lcom/mojang/minecraft/level/Level;III)V	b	addLights
+		p	1	level	level
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+	m	(Lcom/mojang/minecraft/level/Level;IIII)V	b	neighborChanged
+		p	1	level	level
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+		p	5	integer5	side
+	m	()Z	c	isSolidRender
+	m	(Lcom/mojang/minecraft/a/c;)Z	c	containsZ
+	m	(Lcom/mojang/minecraft/level/Level;III)V	c	onPlace
+		p	1	level	level
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+	m	(Lcom/mojang/minecraft/level/Level;III)V	d	onRemove
+		p	1	level	level
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+	m	()I	e	getTickDelay
+	m	(Lcom/mojang/minecraft/level/Level;III)V	e	spawnResources
+		p	1	level	level
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+	m	()I	f	getResourceCount
+	m	(Lcom/mojang/minecraft/level/Level;III)V	f	wasExploded
+		p	1	level	level
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+	m	()I	g	getResource
+	m	()I	h	getDestroySpeed
+	m	()I	j	getRenderLayer
+c	com/mojang/minecraft/level/tile/b	com/mojang/minecraft/level/tile/TransparentTile
+	f	Z	al	renderInside
+	m	(IIZ)V	<init>	
+		p	1		id
+		p	2		tex
+		p	3		renderInside
+c	com/mojang/minecraft/level/tile/c	com/mojang/minecraft/level/tile/DirtTile
+c	com/mojang/minecraft/level/tile/d	com/mojang/minecraft/level/tile/MetalTile
+c	com/mojang/minecraft/level/tile/e	com/mojang/minecraft/level/tile/TreeTile
+c	com/mojang/minecraft/level/tile/f	com/mojang/minecraft/level/tile/OreTile
+c	com/mojang/minecraft/level/tile/g	com/mojang/minecraft/level/tile/LeafTile
+c	com/mojang/minecraft/level/tile/h	com/mojang/minecraft/level/tile/GlassTile
+	f	Z	al	allowSame
+	m	(IIZ)V	<init>	
+		p	1	integer1	id
+		p	2	integer2	tex
+		p	3	boolean3	allowSame
+c	com/mojang/minecraft/level/tile/i	com/mojang/minecraft/level/tile/LiquidTileDynamic
+	f	Lcom/mojang/minecraft/level/b/a;	al	material
+	m	(ILcom/mojang/minecraft/level/b/a;)V	<init>	
+		p	1	integer	id
+		p	2	a	material
+c	com/mojang/minecraft/level/tile/j	com/mojang/minecraft/level/tile/TntTile
+c	com/mojang/minecraft/level/tile/k	com/mojang/minecraft/level/tile/StoneTile
+c	com/mojang/minecraft/level/tile/l	com/mojang/minecraft/level/tile/SandTile
+	m	(Lcom/mojang/minecraft/level/Level;III)V	g	checkSlide
+		p	1	level	level
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
+c	com/mojang/minecraft/level/tile/m	com/mojang/minecraft/level/tile/BookshelfTile
+c	com/mojang/minecraft/level/tile/n	com/mojang/minecraft/level/tile/Sapling
+c	com/mojang/minecraft/level/tile/o	com/mojang/minecraft/level/tile/LiquidTileStatic
+c	com/mojang/minecraft/level/tile/p	com/mojang/minecraft/level/tile/StoneSlabTile
+	f	Z	al	fullSize
+	m	(IZ)V	<init>	
+		p	1	integer	id
+		p	2	boolean2	fullSize
+c	com/mojang/minecraft/level/tile/q	com/mojang/minecraft/level/tile/GrassTile
+c	com/mojang/minecraft/level/tile/r	com/mojang/minecraft/level/tile/Bush
+c	com/mojang/minecraft/level/tile/s	com/mojang/minecraft/level/tile/SpongeTile
+c	com/mojang/minecraft/level/tile/t	com/mojang/minecraft/level/tile/Mushroom
+c	com/mojang/minecraft/mob/Creeper	com/mojang/minecraft/mob/Creeper
+c	com/mojang/minecraft/mob/HumanoidMob	com/mojang/minecraft/mob/HumanoidMob
+c	com/mojang/minecraft/mob/Mob	com/mojang/minecraft/mob/Mob
+	f	I	ATTACK_DURATION	ATTACK_DURATION
+	f	I	TOTAL_AIR_SUPPLY	TOTAL_AIR_SUPPLY
+	f	I	invulnerableTime	invulnerableTime
+	f	Lcom/mojang/minecraft/a/g;	modelCache	modelCache
+	f	I	tickCount	tickCount
+	m	(I)V	heal	heal
+c	com/mojang/minecraft/mob/Pig	com/mojang/minecraft/mob/Pig
+c	com/mojang/minecraft/mob/QuadrupedMob	com/mojang/minecraft/mob/QuadrupedMob
+c	com/mojang/minecraft/mob/Sheep	com/mojang/minecraft/mob/Sheep
+c	com/mojang/minecraft/mob/Skeleton	com/mojang/minecraft/mob/Skeleton
+c	com/mojang/minecraft/mob/Spider	com/mojang/minecraft/mob/Spider
+c	com/mojang/minecraft/mob/Zombie	com/mojang/minecraft/mob/Zombie
+c	com/mojang/minecraft/mob/ai/AI	com/mojang/minecraft/mob/ai/AI
+c	com/mojang/minecraft/mob/ai/BasicAI	com/mojang/minecraft/mob/ai/BasicAI
+c	com/mojang/minecraft/mob/ai/BasicAttackAI	com/mojang/minecraft/mob/ai/BasicAttackAI
+c	com/mojang/minecraft/mob/ai/JumpAttackAI	com/mojang/minecraft/mob/ai/JumpAttackAI
+c	com/mojang/minecraft/net/NetworkPlayer	com/mojang/minecraft/net/NetworkPlayer
+	f	Ljava/lang/String;	displayName	displayName
+	f	Lcom/mojang/minecraft/l;	minecraft	minecraft
+	f	Ljava/util/List;	moveQueue	moveQueue
+	f	Ljava/lang/String;	name	name
+	f	Ljava/awt/image/BufferedImage;	newTexture	newTexture
+	f	Lcom/mojang/minecraft/b/a;	textures$7a7c7041	textures
+	f	I	xp	xp
+	f	I	yp	yp
+	f	I	zp	zp
+	m	(BBB)V	queue	queue
+	m	(BBBFF)V	queue	queue
+	m	(FF)V	queue	queue
+	m	(SSSFF)V	teleport	teleport
+c	com/mojang/minecraft/net/a	com/mojang/minecraft/net/Packet
+c	com/mojang/minecraft/net/b	com/mojang/minecraft/net/Movement
+	f	F	a	xa
+	f	F	b	ya
+	f	F	c	za
+	f	F	d	yRot
+	f	F	e	xRot
+	f	Z	f	hasRot
+	f	Z	g	hasMovement
+	m	(FF)V	<init>	
+		p	1		yRot
+		p	2		xRot
+	m	(FFF)V	<init>	
+		p	1		xa
+		p	2		ya
+		p	3		za
+	m	(FFFFF)V	<init>	
+		p	1		xa
+		p	2		ya
+		p	3		za
+		p	4		yRot
+		p	5		xRot
+c	com/mojang/minecraft/net/c	com/mojang/minecraft/net/ConnectionListener
+c	com/mojang/minecraft/net/d	1
+c	com/mojang/minecraft/net/e	1
+c	com/mojang/minecraft/particle/Particle	com/mojang/minecraft/particle/Particle
+	m	(Lcom/mojang/minecraft/b/c;FFFFFF)V	render$12562f50	render
+		p	1	c2	t
+		p	2	f	a
+		p	3	f2	xa
+		p	4	f3	ya
+		p	5	f4	za
+		p	6	f5	xa2
+		p	7	f6	za2
+c	com/mojang/minecraft/particle/SmokeParticle	com/mojang/minecraft/particle/SmokeParticle
+	m	(Lcom/mojang/minecraft/level/Level;FFF)V	<init>	
+		p	1	level	level
+		p	2	f	x
+		p	3	f2	y
+		p	4	f3	z
+c	com/mojang/minecraft/particle/TerrainParticle	com/mojang/minecraft/particle/TerrainParticle
+	m	(Lcom/mojang/minecraft/level/Level;FFFFFFLcom/mojang/minecraft/level/tile/a;)V	<init>	
+		p	1	level	level
+		p	2	f	x
+		p	3	f2	y
+		p	4	f3	z
+		p	5	f4	xa
+		p	6	f5	ya
+		p	7	f6	za
+		p	8	a2	tile
+c	com/mojang/minecraft/particle/WaterDropParticle	com/mojang/minecraft/particle/WaterDropParticle
+	m	(Lcom/mojang/minecraft/level/Level;FFF)V	<init>	
+		p	1	level	level
+		p	2	f	x
+		p	3	f2	y
+		p	4	f3	z
+c	com/mojang/minecraft/particle/a	com/mojang/minecraft/particle/ParticleEngine
+	f	[Ljava/util/List;	a	particles
+	f	Lcom/mojang/minecraft/b/a;	b	textures
+	m	(Lcom/mojang/minecraft/level/Level;Lcom/mojang/minecraft/b/a;)V	<init>	
+		p	1	level	level
+		p	2	a2	textures
+	m	()V	a	tick
+	m	(Lcom/mojang/minecraft/Entity;)V	a	add
+		p	1	entity	e
+c	com/mojang/minecraft/phys/AABB	com/mojang/minecraft/phys/AABB
+	f	F	x0	x0
+	f	F	x1	x1
+	f	F	y0	y0
+	f	F	y1	y1
+	f	F	z0	z0
+	f	F	z1	z1
+c	com/mojang/minecraft/player/Inventory	com/mojang/minecraft/player/Inventory
+	f	I	selected	selected
+	m	(I)I	a	getSlot
+	m	(I)Z	removeResource	removeResource
+c	com/mojang/minecraft/player/Player	com/mojang/minecraft/player/Player
+	f	I	MAX_ARROWS	MAX_ARROWS
+	f	I	MAX_HEALTH	MAX_HEALTH
+	f	Lcom/mojang/minecraft/player/Inventory;	inventory	inventory
+	f	Ljava/awt/image/BufferedImage;	newTexture	newTexture
+	m	()Lcom/mojang/minecraft/a/k;	getModel	getModel
+	m	()I	getScore	getScore
+c	com/mojang/minecraft/player/a	com/mojang/minecraft/player/Input
+	f	F	a	leftImpulse
+	f	F	b	forwardImpulse
+	f	Z	c	jumping
+	m	()V	a	tick
+	m	(IZ)V	a	setKey
+		p	1		keyCode
+		p	2		isPressed
+	m	()V	b	releaseAllKeys
+c	com/mojang/minecraft/player/b	com/mojang/minecraft/player/KeyboardInput
+	f	[Z	d	keys
+	f	Lcom/mojang/minecraft/k;	e	options
+	m	(Lcom/mojang/minecraft/k;)V	<init>	
+		p	1		options

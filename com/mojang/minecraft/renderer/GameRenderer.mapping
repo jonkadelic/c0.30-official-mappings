@@ -1,3 +1,0 @@
-CLASS com/mojang/minecraft/b/d com/mojang/minecraft/renderer/GameRenderer
-	FIELD a minecraft Lcom/mojang/minecraft/l;
-	METHOD a setupGuiCamera ()V

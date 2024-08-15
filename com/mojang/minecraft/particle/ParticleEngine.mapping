@@ -1,2 +1,0 @@
-CLASS com/mojang/minecraft/particle/a com/mojang/minecraft/particle/ParticleEngine
-	METHOD a add (Lcom/mojang/minecraft/Entity;)V
